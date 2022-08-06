@@ -30,15 +30,15 @@ for line_of_emp in data:
 #     newdata = new_file.read()
 #     print(newdata)
 
-employeename = input("searchEmployee: ")
+#employeename = input("searchEmployee: ")
 
-filepath2 = "D:\\Practice programs\\Visual studio\\Python\\courses_and_employees\\empcourses.txt"
-with open(filepath2, "r") as newfile:
-    data = newfile.readlines()
-    for line in data:
-        #line = line.split("/")
-        if employeename in line:
-            print("Yes! The employee is enrolled to: ", data)
-            #break
-        else:
-            print("Enrolled in no courses.")
+#filepath2 = "D:\\Practice programs\\Visual studio\\Python\\courses_and_employees\\empcourses.txt"
+#with open(filepath2, "r") as newfile:
+#    data = newfile.readlines()
+#    for line in data:
+#       #line = line.split("/")
+#        if employeename in line:
+#            print("Yes! The employee is enrolled to: ", data)
+#            #break
+#        else:
+#            print("Enrolled in no courses.")
