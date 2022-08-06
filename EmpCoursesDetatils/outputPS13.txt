@@ -1,0 +1,78 @@
+Invalid input info:
+COSS is not valid input both for graph and queries
+
+-------List of courses and employees --------
+Total no. of Courses: 4
+Total no. of Employees: 7
+
+
+List of Courses :
+Machine Learning
+Big Data
+DSAD
+NLP
+
+List of Employees :
+Raghu
+Kalyan
+Vishnu
+Rama
+Vardhan
+Sita
+Manish
+-----------------------------------------
+
+-------Search Employee Courses--------
+
+Employee name: Swarup
+List of Courses: 
+Swarup not enrolled in any courses
+
+Employee name: Rama
+List of Courses: 
+Machine Learning
+NLP
+
+Employee name: Radhika
+List of Courses: 
+Radhika not enrolled in any courses
+
+Employee name: Sita
+List of Courses: 
+Machine Learning
+Big Data
+-----------------------------------------
+
+--------Search Course enrollment --------
+
+Course name: DSAD
+List of Employees: 
+Manish
+-----------------------------------------
+
+--------Function findemployeeRelation --------
+Employee A: Rama
+Employee B: Raghu
+Yes, Machine Learning
+
+Employee A: Kalyan
+Employee B: Manish
+No, not related
+
+Employee A: Sandeep
+Employee B: Nitish
+No, not related
+
+Employee A: Swarup
+Employee B: Nitish
+No, not related
+
+-----------------------------------------
+Graph invalid input info:
+Sita is already enrolled in 2 courses. No employee can enroll in more than 2 courses
+Employee Swarup not enrolled in any course
+Employee Radhika not enrolled in any course
+Employee Sandeep not enrolled in any course
+Employee Nitish not enrolled in any course
+Employee Swarup not enrolled in any course
+Employee Nitish not enrolled in any course

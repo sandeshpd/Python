@@ -1,0 +1,14 @@
+List of Courses: 
+Machine Learning 
+Big Data 
+DSAD 
+NLP 
+COSS
+Number of Courses:  5 
+
+List of employees: 
+[' Rama ', ' Raghu ', ' Vardhan ', ' Vishnu ', ' Sita ', ' Manish\n']
+[' Vishnu ', ' Raghu ', ' Sita\n']
+[' Manish ', ' Sita\n']
+[' Rama ', ' Kalyan\n']
+[]
