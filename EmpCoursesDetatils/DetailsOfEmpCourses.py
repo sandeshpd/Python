@@ -1,7 +1,5 @@
-from cgi import print_arguments
-from threading import Timer
-from time import sleep
-
+#This code section displays all the details about Courses and Employees. It does tell how many courses are there, but not how many-
+# -employees as I, yet, did not find the way to count the unique employee names in the file.
 
 filepath = "D:\\Practice programs\\Visual studio\Python\\courses_and_employees\\empcourses.txt"
 with open(filepath, "r") as file:
