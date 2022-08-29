@@ -8,8 +8,10 @@ GameStillGoingOn = True
 # decides who is the winner
 Winner = None
 
+# assigning the player initially
 Current_Player = 'X'    
 
+# function from where the game actually starts
 def Play_Game():
     DisplayBoard()
 
@@ -23,7 +25,7 @@ def Play_Game():
     elif Winner == None:
         print("Match Tied!!!")
 
-
+# function to display the board
 def DisplayBoard():
     print('\n')
     print(Board[0] + " | " + Board[1] + " | " + Board[2] + "    1 | 2 | 3")
@@ -31,14 +33,15 @@ def DisplayBoard():
     print(Board[6] + " | " + Board[7] + " | " + Board[8] + "    7 | 8 | 9")
     print('\n')
 
+# specific player's turn 
 def Turn(Player):
     print(Player+"'s turn")
     position = input("Choose position between 1 - 9: ")
 
     valid = False
     while not valid:
-        while position not in ['1','2','3','4','5','6','7','8','9']:
-            position = input("Choose position from 1 - 9: ")
+        while position not in ['1','2','3','4','5','6','7','8','9']: # if user enters value that excludes those in list
+            position = input("Choose position between 1 - 9: ")
         position = int(position) - 1
         if Board[position] == "-":
             valid = True
@@ -47,10 +50,12 @@ def Turn(Player):
     Board[position] = Player
     DisplayBoard()
 
+# function to check if the game is over or not
 def IsGameOver():
     WhoIsWinner()
     GameTie()
 
+# function to decide who is winner
 def WhoIsWinner():
     global Winner
 
@@ -67,6 +72,7 @@ def WhoIsWinner():
     else:
         Winner = None
 
+# function to check all rows
 def CheckRows():
     global GameStillGoingOn
 
@@ -85,6 +91,7 @@ def CheckRows():
     else:
         return None
 
+# function to check all columns
 def CheckColumns():
     global GameStillGoingOn
 
@@ -103,6 +110,7 @@ def CheckColumns():
     else:
         return None
 
+# function to check all diagonals
 def CheckDiagonals():
     global GameStillGoingOn
 
@@ -117,6 +125,8 @@ def CheckDiagonals():
         return Board[2]
     else:
         return None
+
+# function to check if the game tied
 def GameTie():
     global GameStillGoingOn
     if "-" not in Board:
@@ -125,6 +135,7 @@ def GameTie():
     else:
         return False
 
+# flip the player
 def FlipPlayer():
     global Current_Player
 
@@ -133,8 +144,15 @@ def FlipPlayer():
     elif Current_Player == 'O':
         Current_Player = 'X'
 
+# main function
 def main():
+    #print("1. Play\n2. Exit")
+    #choice = input("Enter the choice: ")
+    #match choice:
+     #   case 1:
     Play_Game()
-
+      #  case 2:
+       #     exit
+# call to main function
 if __name__ == "__main__":
     main()
